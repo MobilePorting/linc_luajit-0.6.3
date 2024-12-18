@@ -190,7 +190,7 @@ namespace linc {
             // Dummy implementation
             return 0;
 
-        
+        }
 
         // haxe trace function
 
