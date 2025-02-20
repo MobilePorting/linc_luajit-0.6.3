@@ -26,7 +26,8 @@
         <section if="linux">
             <lib name='${LINC_LUA_PATH}/lib/lua/lib/Linux64/libluajit.a' if='HXCPP_M64' />
             <lib name='${LINC_LUA_PATH}/lib/lua/lib/LinuxArm64/libluajit.a' if='HXCPP_ARM64' />
-            <!-- <lib name='${LINC_LUA_PATH}/lib/lua/lib/Linux/libluajit.so' if='HXCPP_M32' /> -->
+            <!-- <lib name='${LINC_LUA_PATH}/lib/lua/lib/Linux/libluajit.a' if='HXCPP_M32' /> -->
+            <lib name='${LINC_LUA_PATH}/lib/lua/lib/LinuxArm/libluajit.a' if='HXCPP_M32' />
         </section>
         <section if="mac">
             <lib name='${LINC_LUA_PATH}/lib/lua/lib/Mac/libluajit-5.1.a' if='HXCPP_ARM64 || HXCPP_M64' />
